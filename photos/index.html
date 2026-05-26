@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mangal Villa</title>
+
+<style>
+body {margin:0; font-family:Arial; background:#f4f8ff;}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg,#0a3d62,#1e5f8a);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.btn {
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.book {background:#25D366; color:white;}
+.direction {background:#0a3d62; color:white;}
+
+/* SECTION */
+.section {
+    padding:50px 20px;
+    text-align:center;
+}
+
+/* SLIDER */
+.slider {
+    width:90%;
+    margin:40px auto;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.slides {
+    display:flex;
+    width:1200%;
+    animation: slide 48s infinite;
+}
+
+.slides img {
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+@keyframes slide {
+    0% {margin-left:0;}
+    8% {margin-left:0;}
+    10% {margin-left:-100%;}
+    18% {margin-left:-100%;}
+    20% {margin-left:-200%;}
+    28% {margin-left:-200%;}
+    30% {margin-left:-300%;}
+    38% {margin-left:-300%;}
+    40% {margin-left:-400%;}
+    48% {margin-left:-400%;}
+    50% {margin-left:-500%;}
+    58% {margin-left:-500%;}
+    60% {margin-left:-600%;}
+    68% {margin-left:-600%;}
+    70% {margin-left:-700%;}
+    78% {margin-left:-700%;}
+    80% {margin-left:-800%;}
+    88% {margin-left:-800%;}
+    90% {margin-left:-900%;}
+    98% {margin-left:-900%;}
+    100% {margin-left:0;}
+}
+
+/* GALLERY */
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    width:90%;
+    margin:auto;
+}
+
+.gallery img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* AMENITIES */
+.amenities {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.amenities div {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:150px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* PRICING */
+.pricing {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* REVIEWS */
+.reviews {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.review {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+}
+
+/* FORM */
+form {
+    width:90%;
+    max-width:400px;
+    margin:auto;
+}
+
+input, textarea {
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+/* MAP */
+.map {
+    width:90%;
+    height:400px;
+    border-radius:10px;
+}
+
+/* FLOAT WHATSAPP */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer {
+    background:#0a3d62;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Mangal Villa</h1>
+<p>Luxury Stay in Malavali</p>
+
+<a href="https://wa.me/918898447329"><button class="btn book">Book Now</button></a>
+<a href="https://www.google.com/maps/search/?api=1&query=Mangal+Villa+Malavali"><button class="btn direction">Get Directions</button></a>
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+<div class="slides">
+<img src="photos/img1.jpg.jpeg">
+<img src="photos/img2.jpg.jpeg">
+<img src="photos/img3.jpg.jpeg">
+<img src="photos/img4.jpg.jpeg">
+<img src="photos/img5.jpg.jpeg">
+<img src="photos/img6.jpg.jpeg">
+<img src="photos/img7.jpg.jpeg">
+<img src="photos/img8.jpg.jpeg">
+<img src="photos/img9.jpg.jpeg">
+<img src="photos/img10.jpg.jpeg">
+<img src="photos/img11.jpg.jpeg">
+<img src="photos/img12.jpg.jpeg">
+</div>
+</div>
+
+<!-- AMENITIES -->
+<div class="section">
+<h2>Amenities</h2>
+<div class="amenities">
+<div>🏊 Pool</div>
+<div>📶 WiFi</div>
+<div>🍽 Kitchen</div>
+<div>🚗 Parking</div>
+<div>❄ AC Rooms</div>
+</div>
+</div>
+
+<!-- PRICING -->
+<div class="section">
+<h2>Pricing</h2>
+<div class="pricing">
+<div class="card">
+<h3>Weekday</h3>
+<p>₹10000 / night</p>
+</div>
+<div class="card">
+<h3>Weekend</h3>
+<p>₹15000 / night</p>
+</div>
+</div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="photos/img1.jpg.jpeg">
+<img src="photos/img2.jpg.jpeg">
+<img src="photos/img3.jpg.jpeg">
+<img src="photos/img4.jpg.jpeg">
+<img src="photos/img5.jpg.jpeg">
+<img src="photos/img6.jpg.jpeg">
+<img src="photos/img7.jpg.jpeg">
+<img src="photos/img8.jpg.jpeg">
+<img src="photos/img9.jpg.jpeg">
+<img src="photos/img10.jpg.jpeg">
+<img src="photos/img11.jpg.jpeg">
+<img src="photos/img12.jpg.jpeg">
+</div>
+</div>
+
+<!-- REVIEWS -->
+<div class="section">
+<h2>Customer Reviews</h2>
+<div class="reviews">
+<div class="review">⭐️⭐️⭐️⭐️⭐️ Amazing stay!</div>
+<div class="review">⭐️⭐️⭐️⭐️ Very clean & comfortable</div>
+<div class="review">⭐️⭐️⭐️⭐️⭐️ Perfect weekend villa</div>
+</div>
+</div>
+
+<!-- BOOKING FORM -->
+<div class="section">
+<h2>Book Now</h2>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="tel" placeholder="Phone Number">
+<input type="date">
+<textarea placeholder="Message"></textarea>
+<button class="btn book">Send</button>
+</form>
+</div>
+
+<!-- MAP -->
+<div class="section">
+<h2>Location</h2>
+<iframe class="map" src="https://maps.google.com/maps?q=Mangal%20Villa%20Malavali&output=embed"></iframe>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/918898447329">💬</a>
+
+<footer>
+<p>© 2026 Mangal Villa | Contact: 8898447329</p>
+</footer>
+
+</body>
+</html>
